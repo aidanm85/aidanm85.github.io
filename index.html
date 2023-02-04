@@ -1,33 +1,53 @@
-
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Aidan McComsey</title>
+  <head>
+  <title>Personal Website</title>
   <style>
     body {
-      background-color: #202020;
-      text-align: center;
-      margin: 2.5in;
+      background-color: #F0F0F0;
     }
-    p {
-      color: #ffffff;
+
+    img {
+      height: 5in;
+      width: auto;
+	  margin-left: auto;
+	  margin-right: auto;
+	  display: block;
+    }
+
+    .link-container {
+      height: 5in;
+	  width: 100%;
+    }
+
+    .link-container-left {
+	  align: right;
+      float: left;
+      width: 50%;
+    }
+
+    .link-container-right {
+      float: right;
+      width: 50%;
+    }
+
+    a {
+      text-decoration: none;
+      color: #F0F0F0;
+      background-color: #000000;
+      padding: 0.2in;
+      border: 1px solid #F0F0F0;
     }
   </style>
-</head>
-<body>
-  <header>
-    <a href="aboutme.html">About Me</a>
-	<img src="images/me.jpg" alt="Picture of me, taken by my mom" />
-    <a href="personalprojects.html">Personal Projects</a>
-	<img src="images/projects.png" alt="Computer screen with transparent background" />
-  </header>
-  <main>
-    <p>Welcome to my personal website! Here you can learn more about me and explore my personal projects!</p>
-    <img src="images/JapaneseBridge.jpg" alt="Monet's Japanese Footbridge" />
-  </main>
-  <footer>
-    <p>© 2020 Monet Artwork Website. All Rights Reserved.</p>
-  </footer>
-</body>
-
+  </head>
+  <body>
+    <img src="images/golf.jpg" alt="Blacksburg, Virginia" />
+    <div class="link-container">
+      <div class="link-container-left">
+        <a href="aboutme.html">About Me</a>
+      </div>
+      <div class="link-container-right">
+        <a href="personalprojects.html">Personal Projects</a>
+      </div>
+    </div>
+  </body>
 </html>
