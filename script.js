@@ -72,7 +72,7 @@ function emptyList(){
 }
 
 function loadList(){
-  if(localStorage.getItem("toDos")  !== null){
+  if(localStorage.getItem("toDos")  != null){
     var toDos = JSON.parse(localStorage.getItem("toDos"));
     
     for(var i = 0; i < toDos.length; i++){
