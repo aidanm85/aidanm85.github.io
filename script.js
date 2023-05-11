@@ -1,3 +1,4 @@
+loadList();
 //create buttons and functions for when they're clicked
 var addButton = document.getElementById("add-button");
 addButton.addEventListener("click", addToDoItem);
