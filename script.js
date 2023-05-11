@@ -19,6 +19,8 @@ function  clearCompletedToDoItems(){
   }
 }
 
+
+
 var saveButton = document.getElementById("save-button");
 saveButton.addEventListener("click", saveList);
 
@@ -58,6 +60,9 @@ function toggleToDoItemState(){
   if(this.classList.contains("completed")) this.classList.remove("completed");
   else this.classList.add("completed");
 }
+
+var emptyListButton = document.getElementById("empty-button");
+emptyListButton.addEventListener("click", emptyList);
 
 function emptyList(){
   var toDoItems = toDoList.children;
