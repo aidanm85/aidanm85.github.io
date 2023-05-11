@@ -35,7 +35,7 @@ function saveList() {
     };
     toDos.push(toDoInfo);
   }
-  localStorage.setItem("toDos",  JSON.stringify(toDos))
+  localStorage.setItem("toDos",  JSON.stringify(toDos));
 }
 
 //create vars for the text box and html list
@@ -81,5 +81,3 @@ function loadList(){
     }
   }
 }
-
-loadList();
