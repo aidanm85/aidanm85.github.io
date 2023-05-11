@@ -39,7 +39,7 @@ function saveList() {
 var toDoEntryBox = document.getElementById("todo-entry-box");
 var toDoList = document.getElementById("todo-list");
 
-function newToDoitem(itemText, completed){
+function newToDoItem(itemText, completed){
   var toDoItem = document.createElement("li");
   var toDoText = document.createTextNode(itemText);
   toDoItem.appendChild(toDoText);
