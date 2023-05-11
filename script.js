@@ -26,7 +26,7 @@ saveButton.addEventListener("click", saveList);
 
 function saveList() {
   var toDos = [];
-  for(var i = 0; i < toDos.length; i++){
+  for(var i = 0; i < toDoList.children.length; i++){
     var toDo = toDoList.children.item(i);
     
     var toDoInfo = {
@@ -35,7 +35,7 @@ function saveList() {
     };
     toDos.push(toDoInfo);
   }
-  localStorage.setItem("toDos",  JSON.stringify(toDos));
+  localStorage.setItem("toDoList",  JSON.stringify(toDos));
 }
 
 //create vars for the text box and html list
@@ -72,11 +72,11 @@ function emptyList(){
 }
 
 function loadList(){
-  if(localStorage.getItem("toDos")  != null){
-    var toDos = JSON.parse(localStorage.getItem("toDos"));
+  if(localStorage.getItem("toDoList")  != null){
+    var toDos = JSON.parse(localStorage.getItem("toDoList"));
     
     for(var i = 0; i < toDos.length; i++){
-      var toDo =  toDos[i];
+      var toDo = toDos[i];
       newToDoItem(toDo.task, toDo.completed);
     }
   }
