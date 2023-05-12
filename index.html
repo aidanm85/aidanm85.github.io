@@ -1,33 +1,25 @@
+<!DOCTYPE html>
 <html>
-
-<head>
-    <title>JavaScript to do list</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <div class="todo-wrapper">
-        <h2>My to-do list</h2>
-        <p>Double-click an item to mark it complete.</p>
-        <form name="todo-adder">
-            <input type="text" id="todo-entry-box" />
-        </form>
-        <button id="add-button" class="pretty-button">Add</button>
-        <br />
-        <ol id="todo-list">
-        </ol>
-        <div id="control-wrapper">
-            <button id="clear-completed-button" class="pretty-button">Clear Completed</button>
-            <button id="empty-button" class="pretty-button">Empty List</button>
-            <button id="save-button" class="pretty-button">Save List</button>
-        </div>
-    </div>
-	
-	<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
-
-    <script src="script.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-</body>
+	<body>
+		<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+		
+		<script>
+			const xValues = [50,60,70,80,90,100,110,120,130,140,150];
+			const yValues = [7,8,8,9,9,9,10,11,14,14,15];
 
+			new Chart("myChart", {
+				type: "line",
+				data: {
+					labels: xValues,
+					datasets: [{
+						backgroundColor:"rgba(0,0,255,1.0)",
+						borderColor: "rgba(0,0,255,0.1)",
+						data: yValues
+					}]
+				},
+				options:{...}
+			});
+		</script>
+	</body>
 </html>
