@@ -1,0 +1,45 @@
+body{
+	background-color: lightslategray;
+}
+
+header{
+	position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 5px 0 10px;
+    overflow:auto; zoom: 1;
+    background-color: lightslategray;
+}
+
+#nav{
+	text-align:center;
+}
+
+#nav li {
+    display:inline;
+    margin: 0 0 0 5px;
+}
+
+#nav li a {
+    padding: 5px 15px;
+    font-weight: bold;
+	font-size: 25px;
+    color: #ccc;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#nav li a:hover, #nav li a:focus {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
