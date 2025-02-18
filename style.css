@@ -1,17 +1,135 @@
 body{
-	background-color: lightslategray;
+	background-color: rgb(32, 37, 41);
+    padding-left: 10%;
+    padding-right: 10%;
+    color:#ccc;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header{
-	position:absolute;
+	position:static;
     top:0;
     left:0;
     width:100%;
     padding: 5px 0 10px;
     overflow:auto; zoom: 1;
-    background-color: lightslategray;
+    background-color: rgb(32, 37, 41);
+}
+.Pitt{
+    background-color:royalblue;
+    color:gold;
+    font-weight: 600;
+    border-radius:2px;
+}
+#dallas{
+    border-radius:10px;
+}
+#ozmo-div{
+    padding-top:50px;
+    display:flex;
+    align-items:center;
+}
+#ozmo-pic{
+    border-radius:10px;
+}
+#ozmo-text-div{
+    padding-left:50px;
+}
+#noaa-div{
+    padding-top:50px;
+    display:flex;
+    align-items:center;
+}
+#noaa-pic{
+    border-radius:10px;
+}
+#noaa-text-div{
+    padding-left:50px;
+}
+#work-experience{
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-left:40%;
+    padding-right:40%;
+}
+@keyframes greeting-animation{
+    from{
+        padding-top:0px;
+    }
+    to{
+        padding-top:5px;
+    }
+}
+#H{
+    margin-left:35%;
+    animation-name: greeting-animation;
+    animation-duration: .5s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+#i{
+    animation-name:greeting-animation;
+    animation-duration:.5s;
+    animation-delay:-.5s;
+    animation-direction:alternate;
+    animation-iteration-count:infinite;
+
+}
+#greeting-div{
+    display:flex;
+    padding-top:25px;
+    text-align:center;
+}
+#last-div{
+    padding-top:40px;
+    display:flex;
+}
+#last-div-text{
+    padding-left:50px;
+    padding-right:50px;
+}
+#animation-div{
+    display:flex;
+    position:absolute;
+    margin-left:30%;
+}
+#resume{
+    width:100%;
+}
+#intro-sentence{
+    padding-top:50px;
+    padding-right:100px;
+    padding-left:100px;
+}
+#greeting-div{
+    display:table-column;
+}
+#intro-div{
+    padding-top:10px;
+    display:inline-flex;
+}
+#intro-pic{
+    border-radius:10px;
+}
+#intro-text-div{
+    padding-left:35%;
+    text-align:center;
 }
 
+#middle-div{
+    padding-top:40px;
+}
+#about-me-pic{
+    border-radius:10px;
+}
+#about-me-text-div{
+    padding-right:50px;
+    align-items:center;
+    text-align:center;
+}
+#middle-div{
+    display:flex;
+}
 #nav{
 	text-align:center;
 }
