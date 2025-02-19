@@ -21,6 +21,26 @@ header{
     font-weight: 600;
     border-radius:2px;
 }
+#translator-div{
+    padding-top:30px;
+    padding-bottom:30px;
+    display:flex;
+}
+#website-div{
+    display:flex;
+    padding-top:30px;
+    padding-bottom:30px;
+    align-items:center;
+}
+#website-text-div{
+    padding-left:50px;
+}
+img {
+    border-radius:10px;
+}
+#translator-text-div{
+    padding-left:50px;
+}
 #projects-header{
     align-items:center;
     text-align:center;
@@ -36,11 +56,17 @@ header{
     display:flex;
     padding-top:30px;
     padding-bottom:30px;
+    align-items:center;
 }
 #ight-bet{
     display:flex;
     padding-top:30px;
     padding-bottom:30px;
+    align-items:center;
+}
+#contacts{
+    margin-top:10%;
+    margin-bottom:10%;
 }
 #ight-bet-text-div{
     padding-left:50px;
@@ -52,6 +78,22 @@ header{
     padding-top:50px;
     display:flex;
     align-items:center;
+}
+#linked-in{
+    display:flex;
+    align-items:center;
+    text-align:center;
+    margin-left: 42%;
+    margin-right:42%;
+}
+#linked-in-text{
+    padding-left:15px;
+}
+#contacts{
+    align-items:center;
+}
+#contact-link{
+    font-size:xx-large;
 }
 #ozmo-pic{
     border-radius:10px;
