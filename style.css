@@ -21,6 +21,30 @@ header{
     font-weight: 600;
     border-radius:2px;
 }
+#projects-header{
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+#phone{
+    text-align:center;
+}
+#email{
+    text-align:center;
+}
+#noaa{
+    display:flex;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+#ight-bet{
+    display:flex;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+#ight-bet-text-div{
+    padding-left:50px;
+}
 #dallas{
     border-radius:10px;
 }
