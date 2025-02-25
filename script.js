@@ -1,5 +1,5 @@
 const clientId = "f5fb35eb96cc4160bf54530813485dc4";
-const redirectUri = "https://aidanm85.github.io/callback"; // GitHub Pages URL
+const redirectUri = "http://aidanm85.github.io/callback"; // GitHub Pages URL
 const authEndpoint = "https://accounts.spotify.com/authorize";
 const scopes = ["user-read-currently-playing"];
 
