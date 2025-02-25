@@ -36,8 +36,8 @@ def login():
     return redirect(auth_url)
 
 
-@app.route('/callback')
-def callback():
+@app.route('/translator')
+def translator():
     """Handle the callback and request the access token."""
     code = request.args.get('code')
     state = request.args.get('state')
@@ -97,7 +97,7 @@ def root():
     original_lyrics = "Original lyrics placeholder"
     translated_lyrics = "Translated lyrics placeholder"
 
-    return render_template("index.html", original_lyrics=original_lyrics, translated_lyrics=translated_lyrics, track_name=track_name)
+    return render_template("translator.html", original_lyrics=original_lyrics, translated_lyrics=translated_lyrics, track_name=track_name)
 
 
 
