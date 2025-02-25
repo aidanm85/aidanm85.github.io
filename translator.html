@@ -1,30 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Translator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Currently Playing</title>
 </head>
 <body>
-    <div id = "header">
-        <h2>Translated Lyrics for {{track_name}}</h2>
-    </div>
-    <div id = "lyrics">
-        <div id = "original">
-            <div id = "original-header">
-                <h4>Original lyrics</h4>
-            </div>
-            <div id = "original-lyrics">
-                <p>{{original_lyrics}}</p>
-            </div>
-        </div>
-        <div id = "translated">
-            <div id = "translated-header">
-                <h4>Translated lyrics</h4>
-            </div>
-            <div id = "translated-lyrics">
-                <p>{{translated_lyrics}}</p>
-            </div>
-        </div>
-    </div>
+    <h1>Currently Playing Track</h1>
+    <button id="login">Login to Spotify</button>
+    <p id="track">No track is currently playing.</p>
+    
+    <script src="script.js"></script>
 </body>
 </html>
