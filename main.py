@@ -66,13 +66,13 @@ def callback():
         access_token = tokens['access_token']
         refresh_token = tokens['refresh_token']
         session['access_token'] = access_token  # Store the access token in session
-        return redirect('/translator')
+        return redirect('/')
     else:
         return redirect('/#' + 'error=invalid_token')
 
 
-@app.route('/translator')
-def translator():
+@app.route('/')
+def root():
     """Check if the user is authenticated and make requests to Spotify API."""
 
     access_token = session.get('access_token')
