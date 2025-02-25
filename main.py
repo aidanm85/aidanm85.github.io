@@ -11,7 +11,7 @@ app = Flask(__name__)
 # Your Spotify API credentials
 client_id = 'f5fb35eb96cc4160bf54530813485dc4'  # Your clientId
 client_secret = 'c2e862490df0433f9c00e6e3e281fd17'  # Your client secret
-redirect_uri = 'http://aidanm85.github.io/translator/'  # Your redirect uri
+redirect_uri = 'http://aidanm85.github.io/translator'  # Your redirect uri
 state_key = 'spotify_auth_state'
 
 app.secret_key = os.urandom(24)  # Set a random secret key for session management
