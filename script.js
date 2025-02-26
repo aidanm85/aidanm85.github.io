@@ -16,6 +16,7 @@ function getAccessToken() {
         acc[parts[0]] = decodeURIComponent(parts[1]);
         return acc;
     }, {});
+    console.log("got access token!");
     return hash.access_token;
 }
 
