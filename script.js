@@ -1,7 +1,12 @@
-const clientId = "f5fb35eb96cc4160bf54530813485dc4";
+require('dotenv').config();
+
+
+const clientId = CLIENT_ID + "";
 const redirectUri = "http://aidanm85.github.io/translator"; // GitHub Pages URL
 const authEndpoint = "https://accounts.spotify.com/authorize";
 const scopes = ["user-read-currently-playing"];
+
+console.log(process.env.CLIENT_ID);
 
 document.getElementById("login").addEventListener("click", () => {
     const authUrl = `${authEndpoint}?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scopes.join("%20")}`;
