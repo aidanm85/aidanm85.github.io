@@ -1,6 +1,3 @@
-require('dotenv').config();
-
-
 const clientId = "f5fb35eb96cc4160bf54530813485dc4";
 const redirectUri = "http://aidanm85.github.io/translator"; // GitHub Pages URL
 const authEndpoint = "https://accounts.spotify.com/authorize";
