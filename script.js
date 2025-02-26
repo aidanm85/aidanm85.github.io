@@ -8,6 +8,7 @@ const scopes = ["user-read-currently-playing"];
 
 
 document.getElementById("login").addEventListener("click", () => {
+    console.log("login button clicked!");
     const authUrl = `${authEndpoint}?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scopes.join("%20")}`;
     window.location.href = authUrl;
 });
