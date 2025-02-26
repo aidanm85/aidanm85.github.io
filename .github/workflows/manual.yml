@@ -1,0 +1,14 @@
+name: Manual Trigger
+
+on:
+  workflow_dispatch:  # This allows the workflow to be triggered manually
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run a script
+        run: echo "Workflow triggered from a website!"
