@@ -1,18 +1,15 @@
-name: Manual Trigger
+name: API Request Trigger
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # Allows manual trigger via API request
 
 jobs:
-  run-script:
+  call-api:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Use GitHub Secret
+      - name: Get Song Info
         env:
-          GITHUB_PAT: ${{ secrets.PAT }}  # Use the secret stored in GitHub
+          API_KEY: ${{ secrets.MM_API_KEY }}  # Access the stored API key
         run: |
-          echo "Workflow triggered using a secure PAT!"
-          echo "PAT is available but not exposed in logs."
+          curl --request GET \
+                --url https://api.musixmatch.com/ws/1.1/track.search
