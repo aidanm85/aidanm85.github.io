@@ -1,7 +1,7 @@
 name: Manual Trigger
 
 on:
-  workflow_dispatch:  # This allows the workflow to be triggered manually
+  workflow_dispatch:
 
 jobs:
   run-script:
@@ -10,5 +10,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Run a script
-        run: echo "Workflow triggered from a website!"
+      - name: Use GitHub Secret
+        env:
+          GITHUB_PAT: ${{ secrets.PAT }}  # Use the secret stored in GitHub
+        run: |
+          echo "Workflow triggered using a secure PAT!"
+          echo "PAT is available but not exposed in logs."
