@@ -31,12 +31,14 @@ async function getCurrentlyPlaying() {
         const data = await response.json();
         document.getElementById("track").innerText = `Now Playing: ${data.item.name} by ${data.item.artists.map(artist => artist.name).join(", ")}`;
         getLyrics(data.item.name, data.item.artists[0].name);
+        console.log("Finished getLyrics");
     } else {
         document.getElementById("track").innerText = "No track is currently playing.";
     }
 }
 
 async function getLyrics(name, artist){
+    console.log("Called getLyrics");
     const options = {method: 'GET'};
     const API_KEY = secrets.MM_API_KEY;
     const url = `https://api.musixmatch.com/ws/1.1/track.search?q_track=${encodeURIComponent(name)}&q_artist=${encodeURIComponent(artist)}&apikey=${apiKey}`;
