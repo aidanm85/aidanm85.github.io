@@ -79,6 +79,17 @@ img {
     display:flex;
     align-items:center;
 }
+#corning-div{
+    padding-top:50px;
+    display:flex;
+    align-items:center;
+}
+#corning-pic{
+    border-radius:10px;
+}
+#corning-text-div{
+    padding-left:50px;
+}
 #linked-in{
     display:flex;
     align-items:center;
