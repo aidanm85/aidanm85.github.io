@@ -24,6 +24,7 @@ header{
 #translator-div{
     padding-top:30px;
     padding-bottom:30px;
+    align-items:center;
     display:flex;
 }
 #website-div{
@@ -64,6 +65,7 @@ img {
     padding-bottom:30px;
     align-items:center;
 }
+
 #contacts{
     margin-top:10%;
     margin-bottom:10%;
